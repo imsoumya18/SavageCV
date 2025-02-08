@@ -35,7 +35,7 @@ with st.sidebar:
 def main():
     # upload a PDF file
     uploaded_file = st.file_uploader("Choose a PDF", type="pdf")
-    lang = st.text_input("Enter language (Optional)")
+    lang = st.text_input("Enter language (Optional, default: English)")
 
     if uploaded_file is not None:
         # Save uploaded file to a temporary location
